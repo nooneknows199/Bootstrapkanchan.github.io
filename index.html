@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- CSS animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap files/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand travelname" href="#"
+          ><img class="logo " src="./images/logo.png" /> Travelling </a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Dream</a></li>
+                <li><a class="dropdown-item" href="#">Hard Work</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Live It</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/wall1.jpg"
+              class="d-block w-100 backgd"
+              alt="images/ss (1).jpg"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Dream to reach your goals</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/wallpa2.jpg"
+              class="d-block w-100 backgd"
+              alt="images/ss (1).jpg"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Morning track with friends</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/ss (2).jpg"
+              class="d-block w-100 backgd"
+              alt="images/ss (1).jpg"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Evening with love</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/wall3.jpg"
+              class="d-block w-100 backgd"
+              alt="images/ss (1).jpg"
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Lovely Night View</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- about us sec start -->
+    <section class="main-heading my-5">
+      <div class="text-center">
+        <h1 class="text_effects display-5">About us</h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+            <figure>
+              <img
+                src="images/journey.jpg"
+                alt="about images"
+                class="img-fluid about_img"
+              />
+            </figure>
+          </div>
+          <div
+            class="
+              col-lg-6 col-md-6 col-12 col-xxl-6
+              d-flex
+              justify-content-center
+              align-items-start
+              flex-column
+            "
+          >
+            <h2>My Journey</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Who am I"
+            >
+              Check More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about us sec end -->
+    <!-- services sec start -->
+    <section class="main-heading my-5 bg-light pt-5">
+      <div class="text-center">
+        <h1 class="text_effects display-5">Our services</h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container services">
+        <div class="row">
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/s (2).jpg" alt="service" class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/s (2).jpg" alt="service" class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/s (2).jpg" alt="service" class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-12 text-center my-5">
+            <button
+              type="button"
+              class="btn btn-outline-info animate__animated animate__bounce animate__delay-2s"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Who am I"
+            >
+              Check More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services sec end-->
+    <!-- Gallery sec start -->
+    <section class="main-heading my-5 pt-5">
+      <div class="text-center">
+        <h1 class="text_effects display-5">Gallery <img src="images/arrow.jpg" class="arrow_class"></h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container">
+        <div class="row gx-3 gy-2 my-5">
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal1.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal2.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal7.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal5.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal10.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal6.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal9.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+          <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+            <figure>
+              <img src="images/gal11.jpeg" alt="gallery" class="img-fluid gal" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery sec end -->
+    <!-- More about us start -->
+    <section class="main-heading my-5 ">
+      <div class="text-center text-capitalize ">
+        <h1 class="text_effects display-5">More About Us </h1>
+        <hr class="w-25 mx-auto" />
+        <div class="about_para p-5">
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable. If you are 
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
+            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+            this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a 
+            handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum 
+            is therefore always free from repetition, injected humour, or non-characteristic words etc.
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- More about us end -->
+    <!--offer sec start -->
+    <section class="main-heading my-5 py-1 offer_style">
+      <div class="container-fluid">
+        <div class="row my-5">
+          <div class="col-xxl-12 col-12 py-5 text-center">
+            <h1 class="text-white animate__animated animate__zoomInDown">Check Out the videos</h1>
+            <p>
+              Nenber jhfsdhfuior vsdfherjurieot sdfertre frsetkj fdffhj
+              jfjkdsfif
+            </p>
+            <div class="pikachu_run">
+              <img src="images/pikachu-running.gif" alt="pikachu"> 
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-box-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+                />
+              </svg>
+              Check More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Videos</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Please check the video</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a
+              href="https://www.youtube.com/watch?v=6nkySjnkbaI"
+              target="_blank"
+            >
+              <button type="button" class="btn btn-primary">Check Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--offer sec end -->
+    <!-- OUR TEAM start -->
+    <section class="ourteam my-5 pt-5">
+      <div class="container text-center">
+        <h1 class="text_effects display-5">Our Amazing Team</h1>
+        <hr class="w-25 mx-auto" />
+        <div class="row my-5">
+          <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+            <figure class="figure">
+              <img src="images/team3.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+                <figcaption>
+                  <h4>Loreum</h4>
+                <p>Team Leader</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+            <figure class="figure">
+              <img src="images/team1.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+                <figcaption>
+                  <h4>Ipsum</h4>
+                <p>Designer</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+            <figure class="figure">
+              <img src="images/team4.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+                <figcaption>
+                  <h4>Harry</h4>
+                <p>Developer</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- OUR TEAM end -->
+    <!-- Contact Us sec start -->
+    <section class="main-heading my-5 pt-5">
+      <div class="text-center">
+        <h1 class="text_effects display-5">Contact Us</h1>
+        <hr class="w-25 mx-auto" />
+      </div>
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+            <form class="form-container">
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="pe-4">Gender</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Female</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="inlineRadio3"
+                    >Others</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleDataList" class="form-label"
+                  >Select City</label
+                >
+                <input
+                  class="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                  placeholder="Type to search..."
+                />
+                <datalist id="datalistOptions">
+                  <option value="San Francisco"></option>
+                  <option value="New York"></option>
+                  <option value="Seattle"></option>
+                  <option value="Los Angeles"></option>
+                  <option value="Chicago"></option>
+                </datalist>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Comment</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us sec end -->
+    <!-- footer sec start -->
+    <footer class="full-footer">
+      <div class="container top-footer p-md-3 p-1">
+        <div class="row">
+          <div class="col-md-3 pl-4 pr-4">
+            <h3>
+              <img class="img-fluid1" src="images/logo.png" alt="logo" />Travelling
+            </h3>
+            <p>
+              The world is a book and those who do not travel read only one
+              page.So lets ready to explore.We are here to help and guide you.
+            </p>
+            <a style="color: silver" class="p-1" href="#"
+              ><i class="fab fa-2x fa-facebook-square"></i
+            ></a>
+            <a style="color: silver" class="p-1" href="#"
+              ><i class="fab fa-2x fa-google-plus-square"></i
+            ></a>
+            <a style="color: silver" class="p-1" href="#"
+              ><i class="fab fa-2x fa-instagram"></i
+            ></a>
+            <a style="color: silver" class="p-1" href="#"
+              ><i class="fab fa-2x fa-twitter-square"></i
+            ></a>
+          </div>
+          <div class="col-md-3 pl-4 pr-4">
+            <h3>Important Links</h3>
+            <a href="">Privacy Policy</a><br />
+            <a href="">Youtube Channel</a><br />
+            <a href="">Blog Articles</a><br />
+            <a href="">Social</a>
+          </div>
+          <div class="col-md-3 pl-4 pr-4">
+            <h3>Our Services</h3>
+            <a href="">Tracking</a><br />
+            <a href="">Night Out</a><br />
+            <a href="">Hotels</a><br />
+            <a href="">Beaches</a>
+            <a href="">Mountains</a>
+          </div>
+          <div class="col-md-3 pl-4 pr-4">
+            <h3>Contact Us</h3>
+            <a href=""><i class="fas fa-phone"></i> +(91) 9090909090 </a><br />
+            <a href=""><i class="fas fa-envelope"></i> inquiry@gmail.com </a
+            ><br />
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227821.93444327175!2d80.8020814297322!3d26.848928992534724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1624975364123!5m2!1sen!2sin"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark text-center text-white">
+        <p class="ff">copyright © 2020 - All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- footer sec end -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="bootstrap files/js/popper.min.js"></script>
+    <script src="bootstrap files/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

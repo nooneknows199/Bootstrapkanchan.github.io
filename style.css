@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+body{
+    position: relative;
+}
+
+.text_effects{
+    text-shadow: 3px 4px 5px grey;
+}
+
+/* pikachu animation */
+.pikachu_run{
+    width:100%;
+    height:110px;
+    position: relative;
+}
+.pikachu_run img{
+    width:140px;
+    height:120px;
+    position: absolute;
+    left:0;
+    top: -17px;
+    animation-name: pikachu;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes pikachu{
+    from{left:0}
+    to{left:90%}
+}
+
+.arrow_class{
+    width:50px;
+    height:50px;
+    transition-property: width,height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.arrow_class:hover{
+    width:100px;
+    height:100px;
+    /* transform: scale(2,2); */
+}
+
+/* mutiple column */
+.about_para{
+    column-count: 3;
+    column-gap: 50px;
+    text-align: justify;
+    column-rule: dashed;
+    column-rule-color: aqua;
+}
+.travelname{
+    font-weight: bold;
+    
+}
+
+.logo{
+    width:60px;
+    height:30px;
+    transition-property: width,height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.logo:hover{
+   transform: scale(2,2);
+}
+.carousel-item img{
+    width: 100;
+    height: 92vh;
+}
+.about_img{
+    min-width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+}
+.gal{
+    border-radius: 15px;
+}
+.card{
+    box-shadow: 6px 6px 5px grey;
+}
+.services img{
+    width:100%;
+    height:100%;
+}
+.offer_style{
+    background: #a6dcef;
+}
+.ff{
+    margin-bottom: 0;
+}
+.form-container{
+    border: 1px solid grey;
+    padding: 40px 60px;
+    -webkit-box-shadow: 9px 12px 29px 5px rgba(128,128,128,0.97); 
+box-shadow: 9px 12px 29px 5px rgba(128,128,128,0.97);
+}
+/* Last second Footer Start */
+.full-footer{
+    /* background-color: #34495e; */
+    background-image: linear-gradient(to left,#F650FE, #607BF5);
+    width: 100%;
+}
+.top-footer{
+    color: white;
+}
+.top-footer p{
+    color: white;
+}
+.top-footer a{
+    color: white;
+    font-weight: 600;
+}
+.ff{
+    margin-bottom: 0;
+}
+.img-fluid1{
+    width:70px;
+    height:70px;
+}
+
+.animate__animated.animate__bounce {
+    --animation-delay: 12s;
+  }
+
+/* Last second Footer End */
+
+/* responsive css code */
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {... }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
